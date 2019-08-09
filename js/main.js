@@ -18,8 +18,9 @@ const fourSide = function(){
         for (let i = 0; i < count.value; i++) {
             roll.push(Math.floor(Math.random() * 4) + 1);
         }
-    
-        result.innerHTML = roll;
+        let rollAsString = roll.join(', ')
+        
+        result.innerHTML = rollAsString;
         roll.length = 0;
     }
 }();
@@ -41,7 +42,9 @@ const sixSide = function(){
         for (let i = 0; i < count.value; i++) {
             roll.push(Math.floor(Math.random() * 6) + 1);
         }
-        result.innerHTML = roll;
+        let rollAsString = roll.join(', ')
+        
+        result.innerHTML = rollAsString;
         roll.length = 0;
     }
 }();
@@ -63,7 +66,9 @@ const eightSide = function(){
         for (let i = 0; i < count.value; i++) {
             roll.push(Math.floor(Math.random() * 8) + 1);
         }
-        result.innerHTML = roll;
+        let rollAsString = roll.join(', ')
+        
+        result.innerHTML = rollAsString;
         roll.length = 0;
     }
 }();
@@ -85,7 +90,9 @@ const tenSide = function(){
         for (let i = 0; i < count.value; i++) {
             roll.push(Math.floor(Math.random() * 10) + 1);
         }
-        result.innerHTML = roll;
+        let rollAsString = roll.join(', ')
+        
+        result.innerHTML = rollAsString;
         roll.length = 0;
     }
 }();
@@ -107,7 +114,9 @@ const twelveSide = function(){
         for (let i = 0; i < count.value; i++) {
             roll.push(Math.floor(Math.random() * 12) + 1);
         }
-        result.innerHTML = roll;
+        let rollAsString = roll.join(', ')
+        
+        result.innerHTML = rollAsString;
         roll.length = 0;
     }
 }();
@@ -129,7 +138,9 @@ const twentySide = function(){
         for (let i = 0; i < count.value; i++) {
             roll.push(Math.floor(Math.random() * 20) + 1);
         }
-        result.innerHTML = roll;
+        let rollAsString = roll.join(', ')
+        
+        result.innerHTML = rollAsString;
         roll.length = 0;
     }
 }();
