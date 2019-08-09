@@ -16,11 +16,15 @@ const fourSide = function(){
         roll = [];
     dice.onclick = () => {
         for (let i = 0; i < count.value; i++) {
-            roll.push(Math.floor(Math.random() * 4) + 1);
+            roll.push( Math.floor(Math.random() * 4) + 1);
         }
         let rollAsString = roll.join(', ')
-        
-        result.innerHTML = rollAsString;
+        if (roll.length <= 20){
+            result.innerHTML = rollAsString;
+        }
+        else {
+            result.innerHTML = 'You are trying to roll to many Dice.';
+        }
         roll.length = 0;
     }
 }();
@@ -43,8 +47,12 @@ const sixSide = function(){
             roll.push(Math.floor(Math.random() * 6) + 1);
         }
         let rollAsString = roll.join(', ')
-        
-        result.innerHTML = rollAsString;
+        if (roll.length <= 20){
+            result.innerHTML = rollAsString
+        }
+        else {
+            result.innerHTML = 'You are trying to roll to many Dice.'
+        }
         roll.length = 0;
     }
 }();
@@ -67,8 +75,12 @@ const eightSide = function(){
             roll.push(Math.floor(Math.random() * 8) + 1);
         }
         let rollAsString = roll.join(', ')
-        
-        result.innerHTML = rollAsString;
+        if (roll.length <= 20){
+            result.innerHTML = rollAsString
+        }
+        else {
+            result.innerHTML = 'You are trying to roll to many Dice.'
+        }
         roll.length = 0;
     }
 }();
@@ -91,8 +103,12 @@ const tenSide = function(){
             roll.push(Math.floor(Math.random() * 10) + 1);
         }
         let rollAsString = roll.join(', ')
-        
-        result.innerHTML = rollAsString;
+        if (roll.length <= 20){
+            result.innerHTML = rollAsString
+        }
+        else {
+            result.innerHTML = 'You are trying to roll to many Dice.'
+        }
         roll.length = 0;
     }
 }();
@@ -115,8 +131,12 @@ const twelveSide = function(){
             roll.push(Math.floor(Math.random() * 12) + 1);
         }
         let rollAsString = roll.join(', ')
-        
-        result.innerHTML = rollAsString;
+        if (roll.length <= 20){
+            result.innerHTML = rollAsString
+        }
+        else {
+            result.innerHTML = 'You are trying to roll to many Dice.'
+        }
         roll.length = 0;
     }
 }();
@@ -139,8 +159,12 @@ const twentySide = function(){
             roll.push(Math.floor(Math.random() * 20) + 1);
         }
         let rollAsString = roll.join(', ')
-        
-        result.innerHTML = rollAsString;
+        if (roll.length <= 5){
+            result.innerHTML = rollAsString
+        }
+        else {
+            result.innerHTML = 'You are trying to roll to many Dice.'
+        }
         roll.length = 0;
     }
 }();
