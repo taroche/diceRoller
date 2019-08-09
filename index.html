@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Dice Roller</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Please roll all of the dice</h1>
+        </header>
+        <table>
+            <thead>
+                <tr class='heading'>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img id='fourSideD' src='img/d4.png' alt='4 Sided Dice'></td>
+                    <td class='number-input'>
+                        <button id='minusFourD' class='minus' >-</button>
+                        <input id='countFourD' class='quantity' min='0' max='20' name='quantity' value='1' type='number'>
+                        <button id='plusFourD' class="plus">+</button>
+                    </td>
+                    <td id='resultFourD' class='result' ></td>
+                </tr>
+                <tr>
+                    <td><img id='sixSideD' src='img/D6.png' alt='6 Sided Dice'></td>
+                    <td class='number-input'>
+                        <button id='minusSixD' class='minus'>-</button>
+                        <input id='countSixD' class='quantity' min='0' max='20' name='quantity' value='1' type='number'>
+                        <button id='plusSixD' class="plus">+</button>
+                    </td>
+                    <td id='resultSixD' class='result'></td>
+                </tr>
+                <tr>
+                    <td><img id='eightSideD' src='img/D8.png' alt='8 Sided Dice'></td>
+                    <td class='number-input'>
+                        <button id='minusEightD' class='minus'>-</button>
+                        <input id='countEightD' class='quantity' min='0' max='20' name='quantity' value='1' type='number'>
+                        <button id='plusEightD' class="plus">+</button>
+                    </td>
+                    <td id='resultEightD' class='result'></td>
+                </tr>
+                <tr>
+                    <td><img id='tenSideD' src='img/d10.png' alt='10 Sided Dice'></td>
+                    <td class='number-input'>
+                        <button id='minusTenD' class='minus'>-</button>
+                        <input id='countTenD' class='quantity' min='0' max='20' name='quantity' value='1' type='number'>
+                        <button id='plusTenD' class="plus">+</button>
+                    </td>
+                    <td id='resultTenD' class='result'></td>
+                </tr>
+                <tr>
+                    <td><img id='twelveSideD' src='img/d12.png' alt='12 Sided Dice'></td>
+                    <td class='number-input'>
+                        <button id='minusTwelveD' class='minus'>-</button>
+                        <input id='countTwelveD' class='quantity' min='0' max='20' name='quantity' value='1' type='number'>
+                        <button id='plusTwelveD' class="plus">+</button>
+                    </td>
+                    <td id='resultTwelveD' class='result'></td>
+                </tr>
+                <tr>
+                    <td><img id='twentySideD' src='img/D20.png' alt='20 Sided Dice'></td>
+                    <td class='number-input'>
+                        <button id='minusTwentyD' class='minus'>-</button>
+                        <input id='countTwentyD' class='quantity' min='0' max='5' name='quantity' value='1' type='number'>
+                        <button id='plusTwentyD' class="plus">+</button>
+                    </td>
+                    <td id='resultTwentyD' class='result'></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src='js/main.js'></script>
+    </body>
+</html>
