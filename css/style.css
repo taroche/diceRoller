@@ -1,5 +1,8 @@
 body {
     background: url('../img/RedDragon.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     color: aliceblue;
 }
@@ -42,5 +45,6 @@ img {
 }
 
 .result {
-    font-size: 200%;
+    font-size: 250%;
+    font-weight: 700;
 }
