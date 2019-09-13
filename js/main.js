@@ -1,4 +1,4 @@
-
+(function() {
 const running = (dice, count, result, minus, plus, number) => {
     minus.onclick = function() {
         count.stepDown(1);
@@ -105,3 +105,4 @@ const twentySide = function(){
         roll.length = 0;
     }
 }();
+})();
